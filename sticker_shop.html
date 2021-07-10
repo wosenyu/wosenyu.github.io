@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaoMaoPressCo</title>
+
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="layout.css" rel="stylesheet">
+  <link href="sticker_style.css" rel="stylesheet">
+  <script src="shop.js" async></script>
+  <script src="login.js" async></script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <a href="sticker_AboutMe.html">
+        <img src="./stickerpic/BannerMaoMao.png" alt="Sticker shop">
+      </a>
+      <nav class="horizontal">
+        <ul>
+          <li>
+            <a href="sticker_home.html">Home <i class="uil uil-estate"></i></a>
+          </li>
+          <li>
+            <a href="sticker_AboutMe.html">About Me <i class="uil uil-user-circle"></i> </a>
+          </li>
+          <li>
+            <a href="sticker_shop.html">Shop <i class="uil uil-shopping-bag"></i></a>
+          </li>
+          <li><a href="sticker_events.html">Event <i class="uil uil-calender"></i></a></li>
+          
+          <li>
+            <a href="sticker_review.html">Review</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section>
+    <p>Login to order</p>
+
+   <form id="memberForm" method="post">
+      <p id="loginMessage">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password">
+          <button type="submit" onclick="display()" >Login</button>
+          <!-- <button id="logout" type="submit" action="#" >Logout</button> -->
+      </p>
+   </form>
+ </section>
+
+
+ <h1 class="blob">Limited Edition Stickers</h1>
+ <p>These two stickers are sold once per year. To make sure everyone gets one, 2 per person </p>
+ 
+
+
+
+
+  <section id="summary">
+    <h1 class="animate__animated animate__bounce">BobaCat Sticker</h1>
+    
+    <img src="./stickerpic/BobaCat.png" alt="" style="width: 100px;">
+    <p>Come and buy this BoBa Cat Sticker for your kids or boba lovers. This cute design is from my addiction with boba drinks.</p>
+ </section>
+ <section id="summary">
+   <h1 class="animate__animated animate__bounce">Hongbaocat Sticker</h1>
+   
+   
+   <img src="./stickerpic/Hongbaocat.png" alt="" style="width: 100px;">
+   <p>For chinese new year instead of giving hongbao to people, you can give this hongbao cat sticker to people who likes cat.</p>
+</section>
+ 
+ <section id="orderSection">
+    <!-- <form id="cart" name="cart" method="get" action="sticker_payment.html">
+      
+      <table id="cartTable">
+         <caption >Shopping Cart</caption>
+         <tbody><tr>
+            <td>
+               <label>Boba Cat Sticker($5.95)</label>
+               <input type="hidden" name="modelCost" id="modelCost" value="5.95">
+               <input type="hidden" id="modelName" name="modelName" value="Bobacat Sticker($5.95)">
+            </td>
+            <td class="rightA">
+               <label for="modelQty">Qty</label>
+               <select name="modelQty" id="modelQty">
+                  <option value="1" selected="">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                  <option value="10">10</option>
+               </select>   
+            </td>                 
+            <td>
+               <input type="text" name="orderCost" id="orderCost" size="10" readonly="">
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2"> 
+               <input type="hidden" id="shippingType" name="shippingType">                
+               <fieldset>
+                  <legend>Shipping</legend>
+                  <label><input type="radio" id="overnight" name="shipping" value="3.95" checked=""> Overnight Shipping ($3.95 per)</label>
+                  <label><input type="radio" id="day_2" name="shipping" value="2.95"> 2-Day Shipping ($2.95 per)</label>   
+                  <label><input type="radio" id="ground" name="shipping" value="1.95"> Ground Shipping ($1.95 per)</label> 
+               </fieldset>
+            </td>
+            <td>
+               <input type="text" name="shippingCost" id="shippingCost" size="10" readonly="">
+            </td>
+         </tr>        
+         <tr>
+            <td colspan="2" class="rightA">Subtotal</td>
+            <td class="outcell">
+               <input type="text" name="subTotal" id="subTotal" size="10" readonly="">
+            </td>
+         </tr>
+
+         <tr>
+            <td colspan="2" class="rightA">Tax (5%)</td>
+            <td>
+               <input type="text" name="salesTax" id="salesTax" size="10" readonly="">
+            </td>
+         </tr>
+
+         <tr>
+            <td colspan="2" class="rightA">TOTAL</td>
+            <td>
+               <input type="text" name="cartTotal" id="cartTotal" size="10" readonly="">
+           </td>
+         </tr>
+      </tbody></table>
+
+      
+
+      <input type="submit" id="buttonAdd" value="Checkout">
+
+
+    </form> -->
+
+    <form id="cart" name="cart" methods="get" action="sticker_payment.html" >
+              
+      <table id="cartTable">
+         <caption>Shopping Cart</caption>
+         <tr>
+            <td>
+                <label for="sticker">Cart#1</label>
+                <select name="sticker" id="pastries">
+                   <option value="3.95" selected>Boba Cat ($3.95)</option>
+                   <option value="3.95"> HongBaocat ($3.95)</option>
+                   <option value="2.95"> XiaoLongBao Cat ($2.95)</option>
+                   <option value="2.95"> Long Cat ($2.95)</option>
+                   <option value="2.95"> SalmonSushi Cat ($2.95)</option>
+                   
+                </select>   
+                <input type="hidden" name="foodName" id="foodName" /><!-- value="1.10" /> -->
+                <!-- <input type="hidden" id="foodName" name="foodName" value="Eggy Custard Tart ($1.10)" /> -->
+                <!-- <input type="hidden" name="foodCost" id="foodCost" value="1.25" />
+                <input type="hidden" id="foodName" name="foodName" value="Baked Buns ($1.25)" /> -->
+             </td>
+            <!-- <td>
+               <label>Eggy Custard Tart ($1.10)</label>
+               <input type="hidden" name="foodCost" id="foodCost" value="1.10" />
+               <input type="hidden" id="foodName" name="foodName" value="Eggy Custard Tart ($1.10)" />
+            </td> -->
+            <td class="rightA">
+               <label for="foodQty">Qty</label>
+               <select name="foodQty" id="foodQty">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                  <option value="10">10</option>
+               </select>   
+            </td>                 
+            <td>
+               <input type="text" name="foodCost" id="foodCost" size="10" readonly="" />
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+                <label for="pastries2">Cart#2</label>
+                <select name="pastries2" id="pastries2">
+                   <option value="0.00"selected></option>
+                  <option value="3.95" >Boba Cat ($3.95)</option>
+                  <option value="3.95"> HongBaocat ($3.95)</option>
+                  <option value="2.95"> XiaoLongBao Cat ($2.95)</option>
+                  <option value="2.95"> Long Cat ($2.95)</option>
+                  <option value="2.95"> SalmonSushi Cat ($2.95)</option>
+                </select>   
+                <input type="hidden" name="foodName2" id="foodName2" /><!-- value="1.10" /> -->
+                <!-- <input type="hidden" id="foodName" name="foodName" value="Eggy Custard Tart ($1.10)" /> -->
+                <!-- <input type="hidden" name="foodCost" id="foodCost" value="1.25" />
+                <input type="hidden" id="foodName" name="foodName" value="Baked Buns ($1.25)" /> -->
+             </td>
+            <!-- <td>
+               <label>Eggy Custard Tart ($1.10)</label>
+               <input type="hidden" name="foodCost" id="foodCost" value="1.10" />
+               <input type="hidden" id="foodName" name="foodName" value="Eggy Custard Tart ($1.10)" />
+            </td> -->
+            <td class="rightB">
+               <label for="foodQty2">Qty</label>
+               <select name="foodQty2" id="foodQty2">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                  <option value="10">10</option>
+               </select>   
+            </td>                 
+            <td>
+               <input type="text" name="foodCost2" id="foodCost2" size="10" readonly />
+            </td>
+         </tr>
+         
+
+         <!-- <tr>
+            <td>
+               <label>Baked Buns ($1.25)</label>
+               <input type="hidden" name="foodCost2" id="foodCost2" value="1.25" />
+               <input type="hidden" id="foodName2" name="foodName2" value="Baked Buns ($1.25)" />
+            </td>
+            <td class="rightB">
+               <label for="foodQty2">Qty</label>
+               <select name="foodQty2" id="foodQty2">
+                  <option value="0" selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                  <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                  <option value="10">10</option>
+               </select>   
+            </td>                 
+            <td>
+               <input type="text" name="orderCost2" id="orderCost2" size="10" readonly />
+            </td>
+         </tr> -->
+
+         <tr>
+            <td colspan="2"> 
+               <input type="hidden" id="shippingType" name="shippingType" />                
+               <fieldset>
+                  <legend>Shipping</legend>
+                  <label><input type="radio" class="shippingFees" id="overnight" name="shipping" value="2.95" checked /> Overnight Shipping ($2.95 per)</label>
+                  <!-- <br> -->
+                  <label><input type="radio" class="shippingFees" id="day_2" name="shipping" value="1.95" /> 2-Day Shipping ($1.95 per)</label>   
+                  <!-- <br> -->
+                  <label><input type="radio" class="shippingFees" id="ground" name="shipping" value="0.95" /> Ground Shipping ($.95 per)</label> 
+                  <!-- <br> -->
+                </fieldset>
+            </td>
+            <td>
+               <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+            </td>
+         </tr>        
+         <tr class="move">
+            <td colspan="2" class="rightA" >Subtotal</td>
+            <td class="outcell">
+               <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+            </td>
+         </tr>
+
+         <tr class="move">
+            <td colspan="2" class="rightA">Tax (8%)</td>
+            <td>
+               <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+            </td>
+         </tr>
+
+         <tr class="move">
+            <td colspan="2" class="rightA">TOTAL</td>
+            <td>
+               <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+           </td>
+         </tr>
+      </table>
+      <input class="submit" type="submit" id="buttonAdd" value="Checkout" />
+    </form>
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+  <!-- <form id="carttwo" name="cart" method="get" action="sticker_payment.html">
+    
+    <table id="cartTable">
+       <caption>Shopping Cart</caption>
+       <tbody><tr>
+          <td>
+             <label>HongBao Cat Sticker($5.95)</label>
+             <input type="hidden" name="modelCost" id="modelCosttwo" value="5.95">
+             <input type="hidden" id="modelName" name="modelName" value="HongBaocat($5.95)">
+          </td>
+          <td class="rightB">
+             <label for="modelQtytwo">Qty</label>
+             <select name="modelQtytwo" id="modelQtytwo">
+                <option value="1" selected="">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                <option value="10">10</option>
+             </select>   
+          </td>                 
+          <td>
+             <input type="text" name="orderCost" id="orderCosttwo" size="10" readonly="">
+          </td>
+       </tr>
+       <tr>
+          <td colspan="2"> 
+             <input type="hidden" id="shippingTypetwo" name="shippingTypetwo">                
+             <fieldset>
+                <legend>Shipping</legend>
+                <label><input type="radio" id="overnight" name="shippingtwo" value="3.95" checked=""> Overnight Shipping ($3.95 per)</label>
+                <label><input type="radio" id="day_2" name="shippingtwo" value="2.95"> 2-Day Shipping ($2.95 per)</label>   
+                <label><input type="radio" id="ground" name="shippingtwo" value="1.95"> Ground Shipping ($1.95 per)</label> 
+             </fieldset>
+          </td>
+          <td>
+             <input type="text" name="shippingCost" id="shippingCosttwo" size="10" readonly="">
+          </td>
+       </tr>        
+       <tr>
+          <td colspan="2" class="rightA">Subtotal</td>
+          <td class="outcell">
+             <input type="text" name="subTotal" id="subTotaltwo" size="10" readonly="">
+          </td>
+       </tr>
+
+       <tr>
+          <td colspan="2" class="rightA">Tax (5%)</td>
+          <td>
+             <input type="text" name="salesTax" id="salesTaxtwo" size="10" readonly="">
+          </td>
+       </tr>
+
+       <tr>
+          <td colspan="2" class="rightA">TOTAL</td>
+          <td>
+             <input type="text" name="cartTotal" id="cartTotaltwo" size="10" readonly="">
+         </td>
+       </tr>
+    </tbody></table>
+    <input type="submit" id="buttonAdd" value="Checkout">
+
+  </form> -->
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p>Follow me on Instagram or Email me any questions you have</p>
+
+    <a href="https://www.instagram.com/maomaopressco/"><i class="uil uil-instagram"></i></a>
+    <a href="mailto:maomaopressco@gmail.com"><i class="uil uil-envelope"></i></a>
+
+  </footer>
+</body>
+
+</html>
