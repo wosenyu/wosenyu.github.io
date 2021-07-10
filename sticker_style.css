@@ -1,0 +1,204 @@
+
+
+
+/* Nav Style */
+body{
+    background-color: rgb(224, 189, 142);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.horizontal>ul>li{
+    display: block;
+    float: left;
+    width: 16.66%;
+}
+ 
+.horizontal>ul>li>a{
+    display: block;
+}
+
+nav.horizontal a {
+    
+    font-family: Champagne, cursive;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+}  
+ 
+nav.horizontal a:link, 
+nav.horizontal a:visited {
+    color: rgb(112, 90, 16);
+    text-decoration: none;
+}
+ 
+nav.horizontal a:hover, 
+nav.horizontal a:active {
+    background-color: rgb(143, 121, 95);
+}
+ 
+ /* content */
+
+div>aside>p{
+    font-family: Champagne, cursive;
+    text-align: left;
+    padding-left: 2pc;
+}
+
+div>aside{
+    border: solid black 2px;
+    width: max-content;
+    padding: 10px;
+    float: right;
+}
+div>aside>ul>li{
+    
+    padding-right: 20px;
+    
+}
+
+p{
+    font-family: Champagne, cursive;
+    
+    text-align: center;
+}
+
+ 
+h1{
+    font-family: Champagne, cursive;
+    color: rgb(177, 124, 55);
+    text-align: center;
+}
+
+
+
+/* body > section#stickerLi > aside {
+	float: right;
+	width: 20%;
+    background-color: rgb(146, 100, 40);
+    
+} */
+aside> ul{
+    list-style-type: none;
+    
+    margin-top: 20px;
+}
+ 
+aside>ul>li>a:link, aside>ul>li>a:visited{
+    color: bisque;
+    text-decoration: none;
+}
+
+aside>ul>li>a:hover, aside>ul>li>a:active{
+    color:rgb(222,128,60);
+    text-decoration: underline;
+}
+
+/* Image style */
+#banner{
+    overflow: hidden; 
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.image{
+    border: solid black 2px;
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+}
+.slide{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border:solid 10px rgb(160, 115, 57);
+
+}
+
+/* footer */
+
+footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(177, 124, 55);
+    color: bisque;
+    text-align: center;
+}
+
+footer>a{
+    color: bisque;
+    font-size:40px;
+    padding-left: 10px;
+}
+footer>a:visited{
+    font-size:50px;
+}
+
+
+
+
+/* About Me stlye */
+.aboutMe>p{
+    font-family: Champagne, cursive;
+    text-align: center;
+}
+.aboutMe>h1{
+    text-align: center;
+    border: dashed;
+    
+    
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#shop>a{
+    
+    text-decoration: none;
+}
+
+
+
+
+
+.blob {
+	
+
+	
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		
+	}
+
+	70% {
+		transform: scale(1);
+		
+	}
+
+	100% {
+		transform: scale(0.95);
+		
+	}
+}
+
+
+
+
