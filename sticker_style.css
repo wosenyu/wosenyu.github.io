@@ -2,10 +2,7 @@
 
 
 /* Nav Style */
-/* body{
-    background-color: rgb(224, 189, 142);
-}
-
+/*
 img{
     display: block;
     width: 100%;
@@ -76,18 +73,22 @@ h1{
     text-align: center;
 }
 
-.splash{
+
+
+/* .splash{
     position: absolute;
     bottom: 240px;
     left: 420px;
+    flex-direction: column;
 }
 .splashTwo
 {
       position: absolute;
       bottom: 270px;
       left: 500px;
-}
-.bluesplash{
+      flex-direction: column;
+} */
+/* .bluesplash{
     position: absolute;
       top: 700px;
       right: 420px;
@@ -108,7 +109,7 @@ h1{
       position: absolute;
       bottom: -410px;
       left: 470px;
-}
+} */
 
 
 .Tex{
@@ -129,7 +130,7 @@ h1{
 
 
 /* Image style */
-#banner{
+/* #banner{
     overflow: hidden; 
     display: inline-block;
     margin-left: auto;
@@ -139,7 +140,7 @@ h1{
 .image{
     border: solid black 2px;
     display: block;
-    max-width: 50px;
+    max-width: 20px;
     max-height: 50px;
 }
 .slide{
@@ -149,27 +150,23 @@ h1{
     width: 20%;
     border:solid 10px rgb(0, 0, 0);
 
-}
+} */
 
 /* footer */
-
-footer {
-    
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /* background-color: rgb(177, 124, 55); */
-    color: rgb(0, 0, 0);
-    text-align: center;
+.footer {
+    background-color: rgba(122, 161, 219, 0.37);
+    border-top: 2px solid rgb(114, 110, 110);
+    padding: 10px;
 }
 
 
-footer>a{
-    /* color: bisque; */
+
+.footer>a{
+    color: bisque;
     font-size:50px;
     padding-top: 2px;
 }
-footer>a:visited{
+.footer>a:visited{
     font-size:50px;
 }
 
