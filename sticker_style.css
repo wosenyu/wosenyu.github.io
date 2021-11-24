@@ -2,78 +2,123 @@
 
 
 /* Nav Style */
-body{
+/* body{
     background-color: rgb(224, 189, 142);
 }
 
 img{
     display: block;
     width: 100%;
-}
+} */
 
-.horizontal>ul>li{
+/* .horizontal>ul>li{
     display: block;
     float: left;
     width: 16.66%;
-}
+} */
  
-.horizontal>ul>li>a{
+/* .horizontal>ul>li>a{
     display: block;
-}
+} */
 
-nav.horizontal a {
+.navbar a {
     
     font-family: Champagne, cursive;
-    font-size: 1.4em;
+    /* font-size: 1.4em;
     line-height: 1.8em;
-    text-align: center;
+    text-align: center; */
+    padding: 5px;
 }  
  
-nav.horizontal a:link, 
-nav.horizontal a:visited {
-    color: rgb(112, 90, 16);
+.navbar a:link, 
+.navbar a:visited {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
  
-nav.horizontal a:hover, 
-nav.horizontal a:active {
-    background-color: rgb(143, 121, 95);
+.navbar a:hover, 
+.navbar a:active {
+    color: rgb(184, 166, 145);
 }
+
+.navbar{
+    
+     
+      
+      border-bottom: 2px solid rgb(114, 110, 110); 
+      /* box-shadow: 0 20px 20px -20px rgb(85, 85, 85); */
+    
+     
+}
+
+.navbar-item>ul>li{
+    padding: 120px;
+    margin: 60px;
+}
+
+
  
  /* content */
 
-div>aside>p{
-    font-family: Champagne, cursive;
-    text-align: left;
-    padding-left: 2pc;
-}
 
-div>aside{
-    border: solid black 2px;
-    width: max-content;
-    padding: 10px;
-    float: right;
-}
-div>aside>ul>li{
-    
-    padding-right: 20px;
-    
-}
 
 p{
     font-family: Champagne, cursive;
-    
+   
     text-align: center;
 }
 
  
 h1{
     font-family: Champagne, cursive;
-    color: rgb(177, 124, 55);
+    padding: 30px;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
+.splash{
+    position: absolute;
+    bottom: 240px;
+    left: 420px;
+}
+.splashTwo
+{
+      position: absolute;
+      bottom: 270px;
+      left: 500px;
+}
+.bluesplash{
+    position: absolute;
+      top: 700px;
+      right: 420px;
+}
+.bluesplashTwo
+{
+      position: absolute;
+      top: 780px;
+      right: 500px;
+}
+.splashmix{
+    position: absolute;
+    bottom: -470px;
+    left: 420px;
+}
+.splashmixTwo
+{
+      position: absolute;
+      bottom: -410px;
+      left: 470px;
+}
 
+
+.Tex{
+    font-family: Champagne, cursive;
+    font-size: 1.4em;
+    
+    text-align: center;
+    padding: 150px;
+    
+}
 
 /* body > section#stickerLi > aside {
 	float: right;
@@ -81,21 +126,7 @@ h1{
     background-color: rgb(146, 100, 40);
     
 } */
-aside> ul{
-    list-style-type: none;
-    
-    margin-top: 20px;
-}
- 
-aside>ul>li>a:link, aside>ul>li>a:visited{
-    color: bisque;
-    text-decoration: none;
-}
 
-aside>ul>li>a:hover, aside>ul>li>a:active{
-    color:rgb(222,128,60);
-    text-decoration: underline;
-}
 
 /* Image style */
 #banner{
@@ -116,7 +147,7 @@ aside>ul>li>a:hover, aside>ul>li>a:active{
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-    border:solid 10px rgb(160, 115, 57);
+    border:solid 10px rgb(0, 0, 0);
 
 }
 
@@ -127,15 +158,16 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(177, 124, 55);
-    color: bisque;
+    /* background-color: rgb(177, 124, 55); */
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
+
 footer>a{
-    color: bisque;
-    font-size:40px;
-    padding-left: 10px;
+    /* color: bisque; */
+    font-size:50px;
+    padding-top: 2px;
 }
 footer>a:visited{
     font-size:50px;
@@ -198,6 +230,8 @@ footer>a:visited{
 		
 	}
 }
+
+
 
 
 

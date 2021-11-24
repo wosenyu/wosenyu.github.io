@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaoMaoPressCo</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="sticker_style.css" rel="stylesheet">
-    <link href="layout.css" rel="stylesheet">
-    <script src="home.js" async></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaoMaoPressCo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="sticker_style.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet">
+  <script src="home.js" async></script>
+
 </head>
 
 
 <body>
   <header>
-    <div>
+
+    <!-- <div>
       <a href="index.html">
         <img src="./stickerpic/BannerMaoMao.png" alt="Sticker shop">
       </a>
@@ -28,45 +35,68 @@
             <a href="sticker_AboutMe.html">About Me <i class="uil uil-user-circle"></i> </a>
           </li>
           <li>
-            <a href="sticker_shop.html" >Shop <i class="uil uil-shopping-bag"></i></a>
+            <a href="sticker_shop.html">Shop <i class="uil uil-shopping-bag"></i></a>
           </li>
           <li><a href="sticker_events.html">Event <i class="uil uil-calender"></i></a></li>
-         
-          <li >
-            <a href="sticker_review.html" >Review</a>
+
+          <li>
+            <a href="sticker_review.html">Review</a>
           </li>
         </ul>
       </nav>
-    </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
+          <img src="./stickerpic/LogoMaoMao.jpg" alt="cat" style="width: 60px; padding: 5px;
+          margin: 42px;">
+          <ul class="navbar-nav">
+            <li class="nav-item " style=" padding: 40px; ">
+              <a href="index.html">Home <i class="uil uil-estate"></i></a>
+            </li>
+            <li class="nav-item" style=" padding: 40px; ">
+              <a href="sticker_AboutMe.html">About Me <i class="uil uil-user-circle"></i> </a>
+            </li>
+            <li class="nav-item" style=" padding: 40px; ">
+              <a href="sticker_events.html">Event <i class="uil uil-calender"></i></a>
+            </li>
+            <li class="nav-item" style=" padding: 40px; ">
+              <button type="button" class="btn btn-outline-primary"><a href="sticker_shop.html">Shop <i
+                    class="uil uil-shopping-bag"></i></a></button>
+              <!-- <a href="sticker_shop.html">Shop <i class="uil uil-shopping-bag"></i></a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section >
+  <section>
     <h1>Welcome to Mao Mao Sticker Shop</h1>
     <div>
-      <aside>
-        <p>Related content</p>
-        <ul>
-          <li> <a href="https://www.etsy.com/shop/MaoMaoPressCo?ref=simple-shop-header-name&listing_id=963681127">My Stickers</a></li>
-          <li><a href="https://www.stickermule.com/custom-stickers?utm_source=google&utm_medium=cpc&src=GOOG&cid=362721247&gclid=CjwKCAjwuIWHBhBDEiwACXQYsWDoA1uxBiw4ZG1BVdRWF3Xfbk7PN3jWlXK4Y3jOvHHvZpNT8FrshBoC7N0QAvD_BwE"> Custom Stickers</a></li>
-          <li><a href="https://www.etsy.com/market/animal_stickers">Animal Stickers</a></li>
-        </ul>
-      </aside>
     </div>
-    
-
-    <p>You can view through all my mao mao sticker collection below</p>
-    <p>All of these stickers are custome design by me in my free time <br> and wish to sell them to people who likes cute cat desgins.</p>
 
 
+    <p>You can view all my mao mao sticker collection below</p>
+    <p>All of these stickers are custome design by myself in my free time <br> and wish to sell them to people who likes
+      cute cat desgins.</p>
 
 
 
-    <div class="slide" >
-      <img class="picture" src="./stickerpic/LogoMaoMao.jpg" >
-      <img class="picture" src="./stickerpic/BobaCat.png" >
+
+
+    <!-- <div class="slide">
+      <img class="picture" src="./stickerpic/LogoMaoMao.jpg">
+      <img class="picture" src="./stickerpic/BobaCat.png">
       <img class="picture" src="./stickerpic/Hongbaocat.png">
-      <img class="picture" src="./stickerpic/XiaoLongBaoCat.jpg" >
-      <img class="picture" src="./stickerpic/SalmonSushiCat.jpg" >
+      <img class="picture" src="./stickerpic/XiaoLongBaoCat.jpg">
+      <img class="picture" src="./stickerpic/SalmonSushiCat.jpg">
       <img class="picture" src="./stickerpic/LongCat.jpg">
     </div>
     <br />
@@ -75,49 +105,109 @@
         <img src="./stickerpic/LogoMaoMao.jpg">
       </div>
       <div class="image">
-          <img src="./stickerpic/BobaCat.png">
+        <img src="./stickerpic/BobaCat.png">
       </div>
 
-      <div class="image" >
-          <img src="./stickerpic/Hongbaocat.png">
+      <div class="image">
+        <img src="./stickerpic/Hongbaocat.png">
       </div>
-      <div class="image" >
+      <div class="image">
         <img src="./stickerpic/XiaoLongBaoCat.jpg">
       </div>
 
       <div class="image">
-          <img src="./stickerpic/SalmonSushiCat.jpg">
+        <img src="./stickerpic/SalmonSushiCat.jpg">
       </div>
       <div class="image">
         <img src="./stickerpic/LongCat.jpg">
       </div>
+    </div> -->
+    <!-- <div id="carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./stickerpic/LogoMaoMao.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./stickerpic/BobaCat.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./stickerpic/HongBaoCat.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./stickerpic/XiaoLongBaoCat.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./stickerpic/SalmonSushiCat.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./stickerpic/IceCreamCat.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./stickerpic/LongCat.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <img src="splash.jpg" class="splash">
+        <img src="bubbleTea.png" class="splashTwo">
+      </div>
+      <div class=" Tex col-4">
+        A splash of Mao Mao Bubble Tea to cool your mood
+      </div>
     </div>
-    
+
+    <div class="row justify-content-center">
+      <div class="Tex col-4">
+        A splash of Mao Mao HongBao for Chinese New Year mood
+      </div>
+      <div class="col-4">
+        <img src="bluesplash.jpg" class="bluesplash">
+        <img src="hongBao.png" class="bluesplashTwo">
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <img src="splashMix.jpg" class="splashmix">
+        <img src="stickerpic/SushiCat.png" class="splashmixTwo">
+      </div>
+      <div class=" Tex col-4">
+        A splash of Mao Mao Sushi for your craving mood
+      </div>
+    </div>
+
+
   </section>
-  
 
 
 
-    <footer>
-      <p>Follow me on Instagram or Email me any questions you have</p>
-      
-      <a href="https://www.instagram.com/maomaopressco/"><i class="uil uil-instagram"></i></a>
-      <a href="mailto:maomaopressco@gmail.com"><i class="uil uil-envelope"></i></a>
+  <footer class="footer fixed-bottom ">
 
-    </footer>
+    <!-- <p>Follow me on Instagram or Email me any questions you have</p>
 
-
-  
+    <a href="https://www.instagram.com/maomaopressco/"><i class="uil uil-instagram"></i></a>
+    <a href="mailto:maomaopressco@gmail.com"><i class="uil uil-envelope"></i></a> -->
+    <p>&copy; 2019–2021 MaoMaoPressCo, Inc. &middot; </p>
+  </footer>
 
 
+  <!-- <footer>
+    <p>Follow me on Instagram or Email me any questions you have</p>
 
+    <a href="https://www.instagram.com/maomaopressco/"><i class="uil uil-instagram"></i></a>
+    <a href="mailto:maomaopressco@gmail.com"><i class="uil uil-envelope"></i></a>
 
-
-
-
-
-
-
+  </footer> -->
 
 
 
@@ -135,10 +225,27 @@
 
 
 
-  
-  
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>

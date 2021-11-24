@@ -2,13 +2,13 @@
 
 
 // window.addEventListener("load", function(){   
-   
+
 //    var orderData = location.search.slice(1);
 //    orderData = orderData.replace(/\+/g," ");
 //    orderData = decodeURIComponent(orderData);
 //    var orderFields = orderData.split(/[&=]/g);
-   
-   
+
+
 //    document.forms.order.elements.modelName.value = orderFields[3];
 //    document.forms.order.elements.modelQty.value = orderFields[5]; 
 //    document.forms.order.elements.orderCost.value = orderFields[7];
@@ -17,40 +17,40 @@
 //    document.forms.order.elements.subTotal.value = orderFields[15];
 //    document.forms.order.elements.salesTax.value = orderFields[17];
 //    document.forms.order.elements.cartTotal.value = orderFields[19]; 
-   
-   
+
+
 // } );
-window.addEventListener("load",function(){
+window.addEventListener("load", function () {
    var orderData = location.search.slice(1);
-   orderData = orderData.replace(/+/g," ");
+   orderData = orderData.replace(/+/g, " ");
    orderData = decodeURIComponent(orderData);
    var orderFields = orderData.split(/[&=}]/g);
- 
-   document.forms.xyz.elements.foodName.value = orderFields[3];
-   document.forms.xyz.elements.foodQty.value = orderFields[5];
- 
-   document.forms.xyz.elements.foodName2.value = orderFields[11];
+
+   document.forms.order.elements.foodName.value = orderFields[3];
+   document.forms.order.elements.foodQty.value = orderFields[5];
+
+   document.forms.order.elements.foodName2.value = orderFields[11];
    document.forms.order.elements.foodQty2.value = orderFields[13];
- 
+
    document.forms.order.elements.orderCost.value = orderFields[7];
    document.forms.order.elements.orderCost2.value = orderFields[15];
- 
+
    document.forms.order.elements.shippingType.value = orderFields[17];
    document.forms.order.elements.shippingCost.value = orderFields[21];
    document.forms.order.elements.subTotal.value = orderFields[23];
    document.forms.order.elements.salesTax.value = orderFields[25];
    document.forms.order.elements.cartTotal.value = orderFields[27];
- 
- });
+
+});
 
 
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
    document.getElementById("subButton").onclick = runSubmit;
    document.getElementById("cardHolder").oninput = validateName;
-   document.getElementById("cardNumber").oninput = validateNumber;  
+   document.getElementById("cardNumber").oninput = validateNumber;
    document.getElementById("expDate").oninput = validateDate;
-   document.getElementById("cvc").oninput = validateCVC;   
+   document.getElementById("cvc").oninput = validateCVC;
 });
 
 function runSubmit() {
@@ -66,10 +66,10 @@ function validateDate() {
    if (cardDate.validity.valueMissing) {
       cardDate.setCustomValidity("Enter the expiration date");
    } else if (/^(0[1-9]|1[0-2])\/20[12]\d$/.test(cardDate.value) === false) {
-      cardDate.setCustomValidity("Enter a valid expiration date");      
+      cardDate.setCustomValidity("Enter a valid expiration date");
    } else {
       cardDate.setCustomValidity("");
-   }   
+   }
 }
 
 
@@ -119,16 +119,16 @@ function validateNumber() {
 function validateCVC() {
    var cardCVC = document.getElementById("cvc");
    var creditCard = document.querySelector('input[name="company"]:checked').value;
-   
-  if (cardCVC.validity.valueMissing) {
-    cardCVC.setCustomValidity("Enter your code CVC number");
+
+   if (cardCVC.validity.valueMissing) {
+      cardCVC.setCustomValidity("Enter your code CVC number");
    } else if ((creditCard === "amex") && (/^\d{4}$/.test(cardCVC.value) === false)) {
-   cardCVC.setCustomValidity("Enter a 4-digit CVC number");
-  } else if ((creditCard !== "amex") && (/^\d{3}$/.test(cardCVC.value) === false)) {
-   cardCVC.setCustomValidity("Enter a 3-digit CVC number");
-  } else {
-   cardCVC.setCustomValidity("");
-  }
+      cardCVC.setCustomValidity("Enter a 4-digit CVC number");
+   } else if ((creditCard !== "amex") && (/^\d{3}$/.test(cardCVC.value) === false)) {
+      cardCVC.setCustomValidity("Enter a 3-digit CVC number");
+   } else {
+      cardCVC.setCustomValidity("");
+   }
 }
 
 function sumDigits(numStr) {
@@ -142,16 +142,16 @@ function sumDigits(numStr) {
 function luhn(idNum) {
    var string1 = "";
    var string2 = "";
-   
+
    // Retrieve the odd-numbered digits
-   for (var i = idNum.length - 1; i >= 0; i-= 2) {
+   for (var i = idNum.length - 1; i >= 0; i -= 2) {
       string1 += idNum.charAt(i);
    }
    // Retrieve the even-numbered digits and double them
-   for (var i = idNum.length - 2; i >= 0; i-= 2) {
-      string2 += 2*idNum.charAt(i);
+   for (var i = idNum.length - 2; i >= 0; i -= 2) {
+      string2 += 2 * idNum.charAt(i);
    }
-   
+
    // Return whether the sum of the digits is divisible by 10
    return sumDigits(string1 + string2) % 10 === 0;
 }
