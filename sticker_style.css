@@ -73,7 +73,9 @@ h1{
     text-align: center;
 }
 
-
+li{
+    padding: 40px;
+}
 
 /* .splash{
     position: absolute;

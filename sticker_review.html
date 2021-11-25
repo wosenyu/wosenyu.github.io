@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaoMaoPressCo</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="sticker_style.css" rel="stylesheet">
-    <link href="layout.css" rel="stylesheet">
-    <link rel="stylesheet" href="review.css">
-    <script src="reviewForm.js" defer></script>
-    
-    
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MaoMaoPressCo</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <link href="sticker_style.css" rel="stylesheet">
+   <link href="layout.css" rel="stylesheet">
+   <link rel="stylesheet" href="review.css">
+   <script src="reviewForm.js" defer></script>
+
+
 
 </head>
+
 <body>
 
-    <header>
-      <div>
-        <a href="sticker_AboutMe.html">
-          <img src="./stickerpic/BannerMaoMao.png" alt="Sticker shop">
-        </a>
-        <nav class="horizontal">
-          <ul>
-            <li>
-              <a href="index.html">Home <i class="uil uil-estate"></i></a>
-            </li>
-            <li>
-              <a href="sticker_AboutMe.html">About Me <i class="uil uil-user-circle"></i> </a>
-            </li>
-            <li>
-              <a href="sticker_shop.html" >Shop <i class="uil uil-shopping-bag"></i></a>
-            </li>
-            <li><a href="sticker_events.html">Event <i class="uil uil-calender"></i></a></li>
-            
-            <li >
-              <a href="sticker_review.html" >Review </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+   <header>
 
-    <section class="animate__animated animate__bounceIn">
+      <nav class="navbar navbar-expand-md navbar-light">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
+               <img src="./stickerpic/LogoMaoMao.jpg" alt="cat" style="width: 60px; padding: 5px;
+            margin: 42px;">
+               <ul class="navbar-nav">
+                  <li class="nav-item ">
+                     <a href="index.html">Home <i class="uil uil-estate"></i></a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="sticker_AboutMe.html">About Me <i class="uil uil-user-circle"></i> </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="sticker_events.html">Event <i class="uil uil-calender"></i></a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="joke.html">joke <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                           <path
+                              d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                        </svg></a>
+                  </li>
+                  <li class="nav-item">
+                     <button type="button" class="btn btn-outline-primary"><a href="sticker_shop.html">Shop <i
+                              class="uil uil-shopping-bag"></i></a></button>
+                     <!-- <a href="sticker_shop.html">Shop <i class="uil uil-shopping-bag"></i></a> -->
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <section class="animate__animated animate__bounceIn">
       <h1>Customer Survey</h1>
-      <p>Thank you for taking my survey. Your response 
+      <p>Thank you for taking my survey. Your response
          helps me gather data on what to improve and what Im best at.
-         
+
       <p>Surveys are private and confidential. </p>
       <p>Required values are marked by an asterisk (*)</p>
-      
+
       <form id="survey" action="http://www.example.com/redball/survey" method="post">
          <fieldset id="custInfo">
             <legend>Customer Information</legend>
-            
+
             <div class="formRow">
                <label for="name">Name*</label>
                <input name="custName" id="name" type="text" placeholder="first and last name" required />
@@ -81,18 +98,18 @@
                 pattern="^\d{5}(-\d{4})?$" />
             </div> -->
 
-            <div class="formRow"> 
+            <div class="formRow">
                <label for="phone">Phone number</label>
                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
-                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                  pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
             </div>
 
-            <div class="formRow"> 
+            <div class="formRow">
                <label for="mail">E-mail*</label>
-               <input name="custEmail" id="mail" type="email" required/>
+               <input name="custEmail" id="mail" type="email" required />
             </div>
 
-            
+
 
             <div class="formRow">
                <label for="dish">What's your favorite Sticker?</label>
@@ -101,21 +118,21 @@
                   <option value="Boba Cat" />
                   <option value="Hongbao cat" />
                   <option value="None" />
-                  
+
                </datalist>
-            </div> 
-            
+            </div>
+
             <div class="formRow">
                <label for="visit">Date of purchased</label>
                <input name="visitDate" id="visit" type="date" />
-            </div>  
+            </div>
 
             <div class="formRow">
                <label for="order">Order Type</label>
                <select name="orderType" id="order">
                   <option value="order1">Bobao cat</option>
                   <option value="order2">Hongbao Cat</option>
-                  
+
                </select>
             </div>
 
@@ -142,54 +159,54 @@
 
             <div class="formRow">
                <label for="rangeBox">Rate the overall service<br />
-                      (0=poor; 10=great)</label>
+                  (0=poor; 10=great)</label>
                0
-               <input name="serviceRate" id="rangeBox" type="range"
-                      value="5" step="1" min="0" max="10" />
+               <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
                10
             </div>
 
             <label for="commBox">Tell us more about your experience!</label>
             <textarea name="custExp" id="commBox"></textarea>
 
-            
 
-            
+
+
 
             <!-- <div class="formRow">
                <label for="dineSpin">How many times do you dine out per month?</label>
                <input name="dineOut" id="dineSpin" type="number"
                       value="1" step="1" min="0" max="20" />
             </div> -->
-            
+
             <!-- <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
             <label for="mailCB">Add me to your mailing list for great coupons and specials!</label> -->
-            
+
          </fieldset>
 
-         
+
 
          <div id="buttons">
             <input type="submit" value="Submit My Survey" />
             <input type="reset" value="Cancel" />
          </div>
       </form>
-     
+
    </section>
 
 
 
 
 
-  
-  
-  
-  
-  
-    <footer>
+
+
+
+
+
+   <footer>
       <p>Follow me on Instagram or Email me any questions you have</p>
       <a href="https://www.instagram.com/maomaopressco/"><i class="uil uil-instagram"></i></a>
       <a href="mailto:maomaopressco@gmail.com"><i class="uil uil-envelope"></i></a>
-    </footer>
+   </footer>
 </body>
+
 </html>
